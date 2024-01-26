@@ -1,0 +1,41 @@
+# Node.js / npm
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build output
+/_site/
+/.cache/
+
+# 11ty output directory
+/.eleventy-cache/
+
+# Ignore environment-specific files
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+
+# Logs and other generated files
+*.log
+*.swp
+.DS_Store
+
+# Dependency directories
+.pnpm-store/
+.pnpm-workspace.yaml
+
+# Visual Studio Code settings
+.vscode/
+
+# WebStorm settings
+.idea/
+*.iml
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
