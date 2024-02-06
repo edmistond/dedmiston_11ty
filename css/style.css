@@ -1,0 +1,162 @@
+:root {
+    --gradient: linear-gradient(to right,  #f2777a, #f99157, #6699cc, #cc99cc);
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('/fonts/Merriweather-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Merriweather';
+    margin: 0;
+    padding: 0;
+    background-color: f2f0ec;
+    color: #2d2d2d;
+}
+
+footer {
+    text-align: center;
+}
+
+footer .Footnotes {
+    text-align: left !important;
+}
+
+header {
+    margin: 0;
+    padding: 10;
+    color: #eee;
+    background-color: rgb(45,45,45);
+}
+
+header {
+    margin-top: 0;
+    border: none;
+    border-bottom: 15px solid;
+    border-image: linear-gradient(to right,
+    #2d2d2d 0%,  #2d2d2d 3.125%,
+    #393939 3.125%, #393939 9.375%,
+    #515151 9.375%, #515151 15.625%,
+    #747369 15.625%, #747369 21.875%,
+    #a09f93 21.875%, #a09f93 28.125%,
+    #d3d0c8 28.125%, #d3d0c8 34.375%,
+    #e8e6df 34.375%, #e8e6df 40.625%,
+    #f2f0ec 40.625%, #f2f0ec 46.875%,
+    #f2777a 46.875%, #f2777a 53.125%,
+    #f99157 53.125%, #f99157 59.375%,
+    #ffcc66 59.375%, #ffcc66 65.625%,
+    #99cc99 65.625%, #99cc99 71.875%,
+    #66cccc 71.875%, #66cccc 78.125%,
+    #6699cc 78.125%, #6699cc 84.375%,
+    #cc99cc 84.375%, #cc99cc 90.625%,
+    #d27b53 90.625%, #d27b53 100%
+  ) 1; /* 1 specifies that the border image slices are 1 unit wide */
+  border-image-slice: 1; /* Make sure the entire gradient is visible */
+  padding: 10px; /* Add padding to keep the content away from the border */
+  box-sizing: border-box; /* Include padding in the element's total width */
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 50px;
+}
+
+.content {
+    flex: 0 0 75%; /* 60% width for the content area */
+}
+
+.navigation {
+    flex: 0 0 15%; /* 25% width for the navigation */
+}
+
+nav ul {
+    list-style: none; /* Removes bullet points from list */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: block; /* For horizontal list */
+    margin-right: 10px; /* Space between list items */
+    line-height: 2em;
+    font-weight: bold;
+}
+
+nav ul li a, nav ul li a:visited {
+    color: #6699cc;
+    text-decoration: none;
+}
+
+a {
+    color: #6699cc;
+    background: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+
+a:hover {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+header a {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.post_excerpt h3 {
+    font-size: 1.5em;
+}
+
+.post_excerpt p {
+    padding-left: 2.5em;
+}
+
+.post_excerpt .post_date {
+    font-size: 0.8em;
+    color: #666;
+    font-style: italic;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        padding-left: 10px;
+    }
+
+    .content {
+        flex: 0 0 100%;
+        order: 2;
+    }
+
+    .post_excerpt p {
+        padding-left: 1.25em;
+    }    
+
+    .navigation {
+        text-align: center;
+        flex: 0 0 100%;
+        order: 1;
+        border-bottom: 1px solid #666;
+    }
+
+    nav ul li {
+        display: inline;
+    }
+}

@@ -10,7 +10,7 @@ Some general thoughts and a session recap...
 
 ### Accessibility
 
-This was a mixed bag, but I'm not going to fault the organizers here, for a couple of reasons:
+This was a mixed bag, but I'm not going to fault the organizers here<!-- more -->, for a couple of reasons:
 
 - It's a small, regional, volunteer-run conference with, in recent years, a heavy emphasis on cost control and keeping the tickets as affordable as possible so you can attend even if your company isn't paying.
 - Good captioning costs money (see above) and takes time to get organized. I didn't know I was attending until mid-November, and had I put in a formal request for accessible sessions at that point that's probably not enough time to get it set up.

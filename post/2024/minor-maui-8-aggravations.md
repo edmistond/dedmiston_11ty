@@ -5,6 +5,8 @@ date: 2024-01-19
 
 Besides messing with Flutter on a coworkers' recommendation, I'm also making time to play with MAUI again now that dotnet 8 is out. Since Visual Studio for the Mac hits end-of-life on August 31, 2024, I figured it's a good time to test out the MAUI extension for Visual Studio Code.
 
+<!-- more -->
+
 Running through the manual dotnet 8 install process for MAUI was painless; I upgraded to the latest version of the SDK (8.0.101 as of this writing), made sure I had the .NET MAUI, C#, and C# Devkit extensions installed in VS Code, and made sure that I had an up to date XCode install via the app store. Then I dropped into iTerm and ran `dotnet workload install maui` (had to use sudo) and waited around while it pulled down packages.
 
 Once that finished I used the Devkit in VS Code to create a new MAUI project, then jumped into the .csproj file to remove the references to Android. This is where the minor aggravation started, and I'm documenting it here in case anyone else hits this. Here's the key issue: I had format-on-save enabled in VS Code, and I have Redhat's XML extension installed. Csproj files are automatically recognized as XML and it autoformatted them on save, which meant that my `SupportOSPlatformVersion` blocks looked like this:
