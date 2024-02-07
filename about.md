@@ -4,6 +4,8 @@ title: 'About Me'
 eleventyExcludeFromCollections: true
 ---
 
+<div class="main_post">
+
 Hi! I'm David, often [found](https://twitter.com/edmistond/) [online](https://github.com/edmistond/) as **edmistond**.
 
 I'm an experienced polyglot software developer who's worked across the entire stack in a variety of languages. I've been in the industry for over two decades now, with a track record of consistently delivering projects with substantial business value to my employers and to our clients.
@@ -58,3 +60,4 @@ Outside the office, I make an effort to get involved with the technical communit
 * Erie Day of Code - 2015
 * Kalamazoo X - 2014-17
 * Microsoft Build (online) - 2020
+</div>

@@ -3,7 +3,11 @@ layout: main_layout.html
 ---
 
 <h1>{{ title }}</h1>
+<p class="post_date">{{ date | readableDate }}</p>
+
+<div class="main_post">
 {{ content }}
+</div>
 
 {% footnotes %}
 

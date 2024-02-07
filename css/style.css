@@ -1,5 +1,5 @@
 :root {
-    --gradient: linear-gradient(to right,  #f2777a, #f99157, #6699cc, #cc99cc);
+    --gradient: linear-gradient(to right, #f2777a, #f99157, #ffcc66, #99cc99, #66cccc, #6699cc, #cc99cc, #d27b53);
 }
 
 @font-face {
@@ -72,12 +72,22 @@ header {
 
 .content {
     flex: 0 0 75%; /* 60% width for the content area */
+    position: relative;
 }
 
 .navigation {
     flex: 0 0 15%; /* 25% width for the navigation */
+    padding-left: 1em;
+    position: relative;
 }
 
+.navigation::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; bottom: 0;
+    width: 2px; /* Width of the border */
+    background: linear-gradient(to bottom, #2d2d2d, #393939, #515151, #747369, #a09f93, #d3d0c8, #e8e6df, #f2f0ec); /* Same colors as before */
+}
 nav ul {
     list-style: none; /* Removes bullet points from list */
     padding: 0;
@@ -128,10 +138,15 @@ header a {
     padding-left: 2.5em;
 }
 
-.post_excerpt .post_date {
+.post_date {
     font-size: 0.8em;
     color: #666;
     font-style: italic;
+}
+
+.main_post {
+    line-height: 1.65em;
+    font-size: 1.05em;
 }
 
 @media screen and (max-width: 1024px) {
