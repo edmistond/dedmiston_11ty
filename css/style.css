@@ -1,5 +1,6 @@
 :root {
-    --gradient: linear-gradient(to right, #f2777a, #f99157, #ffcc66, #99cc99, #66cccc, #6699cc, #cc99cc, #d27b53);
+    --header_gradient: linear-gradient(to right, #f2777a, #f99157, #ffcc66, #99cc99, #66cccc, #6699cc, #cc99cc, #d27b53);
+    --link_gradient: linear-gradient(to right, #f2777a, #cc99cc, #f2777a);
 }
 
 @font-face {
@@ -68,6 +69,8 @@ header {
     flex-wrap: nowrap;
     margin: 0;
     padding: 50px;
+    line-height: 1.65em;
+    font-size: 1.15em;
 }
 
 .content {
@@ -86,7 +89,7 @@ header {
     position: absolute;
     top: 0; left: 0; bottom: 0;
     width: 2px; /* Width of the border */
-    background: linear-gradient(to bottom, #2d2d2d, #393939, #515151, #747369, #a09f93, #d3d0c8, #e8e6df, #f2f0ec); /* Same colors as before */
+    background: linear-gradient(to bottom, #2d2d2d, #393939, #515151, #747369, #a09f93, #d3d0c8, #e8e6df, #f2f0ec);
 }
 nav ul {
     list-style: none; /* Removes bullet points from list */
@@ -115,7 +118,7 @@ a {
 }
 
 a:hover {
-    background: var(--gradient);
+    background: var(--link_gradient);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
@@ -123,7 +126,7 @@ a:hover {
 }
 
 header a {
-    background: var(--gradient);
+    background: var(--header_gradient);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
@@ -142,11 +145,6 @@ header a {
     font-size: 0.8em;
     color: #666;
     font-style: italic;
-}
-
-.main_post {
-    line-height: 1.65em;
-    font-size: 1.05em;
 }
 
 @media screen and (max-width: 1024px) {
