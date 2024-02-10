@@ -15,7 +15,7 @@ Why do I like it? First, I'm trying to make myself look like a good candidate by
 
 Second, if you can ask this early enough in the interview - or at least in the "any questions for us?" phase of the interview - it's an opportunity to use the information in their answer to emphasize the aspects of your experience that would be most useful to what they're hoping you'll accomplish. This can require a certain amount of thinking on your feet, and I'll admit that I'm not always as good at that as I'd like to be.
 
-Third, it gives me a read on the hiring manager and the company. Do they know why they're hiring beyond "we have available {% footnoteref "headcount" "Given the current industry climate, unfortunately, this is less of a problem now." %}headcount{% endfootnoteref %}"? Do they have a sense of what they want that person to accomplish? My sense is that managers that know the answer to those questions are much more likely to set people up for success.
+Third, it gives me a read on the hiring manager and the company. Do they know why they're hiring beyond "we have available headcount[^1]"? Do they have a sense of what they want that person to accomplish? My sense is that managers that know the answer to those questions are much more likely to set people up for success.
 
 ## As an interviewer
 
@@ -32,3 +32,5 @@ Also, our application architecture was very DI-heavy (as most modern .NET applic
 Finally, in the cases where they didn't know (which wasn't always automatically held against them), it was an opportunity to see if they'd try to bullshit their way through the question. For the record, if you don't know the answer in an interview, trying to bullshit your way through the question is a bad idea. Interviewers can tell.
 
 Readers: what about you? Feel free to ping me [on Mastodon](https://fosstodon.org/@edmistond) or Rands Slack if you have a fun question or interview story.
+
+[^1]: Given the current industry climate, unfortunately, this is less of a problem now.

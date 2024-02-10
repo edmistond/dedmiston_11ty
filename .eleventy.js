@@ -1,12 +1,21 @@
 const striptags = require("striptags");
 const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const footnotes = require("eleventy-plugin-footnotes");
 const _ = require("lodash");
+let markdownIt = require("markdown-it");
+let markdownItFootnote = require("markdown-it-footnote");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
-  eleventyConfig.addPlugin(footnotes);
+
+  const markdownOptions = {
+    html: true,
+    breaks: true,
+    linkify: true,
+  };
+  
+  let markdownLibrary = markdownIt(markdownOptions).use(markdownItFootnote);
+  eleventyConfig.setLibrary("md", markdownLibrary);
 
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("fonts");
