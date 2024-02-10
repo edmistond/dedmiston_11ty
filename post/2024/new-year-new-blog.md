@@ -1,6 +1,6 @@
 ---
 title: New Year, New Blog
-date: 2024-02-06
+date: 2024-02-10
 ---
 
 It's been a long time coming, but I've finally updated my blog's design. I've also moved off of Hugo to [11ty](https://11ty.dev); rather than use a pre-made theme, I wanted to build my own. I've liked the Hugo [Base16](https://htdvisser.github.io/hugo-base16-theme/) theme that I've used for the last few years, and wanted to keep some aspects of that aesthetic.

@@ -24,7 +24,7 @@ eleventyExcludeFromCollections: true
     <published>{{ post.date | readableDate }}</published>
     <id>{{ absolute_post_url }}</id>
     {% unless post.data.external %}
-    <content type="html"><![CDATA[{{ excerpt post | replace: 'href="/', 'href="https://davidedmiston.com/' | replace: 'src="/', 'src="https://davidedmiston.com/' }}]]></content>
+    <content type="html"><![CDATA[{% excerpt post %}]]></content>
     {% endunless %}
   </entry>
   {% endfor %}
