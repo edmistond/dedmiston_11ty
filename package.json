@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx @11ty/eleventy && npm run sw",
+    "build": "npx @11ty/eleventy",
     "start": "npx @11ty/eleventy --serve --quiet --incremental"
   },
   "keywords": [],
