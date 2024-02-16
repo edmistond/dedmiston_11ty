@@ -1,6 +1,6 @@
 ---
 title: New Year, New Blog
-date: 2024-02-12
+date: 2024-02-15
 ---
 
 It's been a long time coming, but I've finally updated my blog's design. I've also moved off of Hugo to [11ty](https://11ty.dev); rather than use a pre-made theme, I wanted to build my own. I've liked the Hugo [Base16](https://htdvisser.github.io/hugo-base16-theme/) theme that I've used for the last few years, and wanted to keep some aspects of that aesthetic.
@@ -12,4 +12,4 @@ I did get mileage out of [GitHub Copilot](https://github.com/features/copilot) t
 
 The actual choice to abuse the heck out of CSS gradients is entirely on me, though...
 
-At any rate - I have more tweaking to do, but I'm really happy with this start and it lays the groundwork for me to move to a lower-capability hosting solution; Dreamhost has served me well for nearly 20 years, but it provides more capabilities than I need or want.
+At any rate - I have more tweaking to do, but I'm really happy with this start, and it lays the groundwork for me to move to a lower-capability hosting solution; Dreamhost has served me well for nearly 20 years, but it provides more capabilities than I need or want.
