@@ -4,6 +4,7 @@ date: 2024-01-30
 ---
 
 I've been following the [Rands Writing Prompts](https://randsprompts.substack.com/) with the intention of writing occasional posts when I get a prompt that grabs me. One of the prompts this week did: "Your favorite interview question and why."
+<!-- more -->
 
 This one is actually kind of a two-fer; I have a question that I almost always ask when I'm interviewing. I also interviewed probably about two dozen candidates at my last job, and had a favorite question that I'd nearly always ask candidates at any level.
 
