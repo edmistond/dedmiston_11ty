@@ -1,17 +1,24 @@
 ---
-layout: 'main_layout.html'
-title: 'The Captions Project'
+layout: "main_layout.html"
+title: "The Captions Project"
 eleventyExcludeFromCollections: true
 ---
 
 <h1>The Captions Project</h1>
 
-<p>This is a continuation and expansion of my late 2023 <a href="/post/2023/10/captioning-tools-extravaganza">closed captioning overview post</a>;
-these tools continue improving and evolving, and I want a central place to continue writing about them.</p>
+<p>
+    This is a continuation and expansion of my late 2023
+    <a href="/post/2023/10/captioning-tools-extravaganza"
+        >closed captioning overview post</a
+    >; these tools continue improving and evolving, and I want a central place
+    to consolidate my writing about them.
+</p>
 
 {% for post in collections.captions_project %}
 <div class="post_excerpt">
-    <h3><a href="{{ post.url }}">{{ post.data.title }}</a> <span class="post_date">{{ post.date | readableDate }}</span></h3>
-    <p>{% excerpt post %}</p>
+    <div>
+        {{ post.date | readableDate }} -
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
+    </div>
 </div>
 {% endfor %}

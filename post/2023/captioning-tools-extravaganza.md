@@ -66,6 +66,8 @@ I haven't used this one personally; one of the draft reviewers mentioned it. Goo
 
 I appreciate that Apple added this. Unfortunately, I think it is the weakest of the available options. In my experience, it struggles more with accuracy and with technical vocabulary than other options do, but it's absolutely worth trying it out for yourself. Also, note that depending on how your machine is set up, it may not function - Apple disables it by rendering a gray box over the captions window if any sort of screen recording software is active. This, unfortunately, includes when you are using DisplayLink adapters to get multiple external displays on M1/M2 Macs that wouldn't otherwise support it; DisplayLink on the Mac is implemented using screen recording.
 
+**Update, October 2024**: I tested this; if you use Keynote, Live Captions _will not_ display over Keynote. Please see [my 2024 update on Live Captions]({{ '/post/2023/10/captioning-tools-extravaganza' | url }}) for further discussion.
+
 #### Live Captions/April ASR
 
 - **Free, Linux, macOS ARM and Intel, may require you to build it yourself, works offline**
