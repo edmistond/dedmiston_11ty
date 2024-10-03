@@ -98,7 +98,7 @@ Bluntly: **These limitations make me glad my work laptop isn't a MacBook.** As a
 
 Apple's Live Captions in macOS are a good step forward in accuracy, noise resilience, and technical vocabulary, hindered by some minor regressions/bugs. If you aren't a power user (see above), you'll probably be happy with them. But if you're a professional or power user who needs them to work while doing anything that approaches screen sharing, you'll probably find them very frustrating. And therefore, my previous verdict remains: Apple Live Captions are still the weakest of the available options.
 
-If you're a power user and live captioning sits high on your priority list, I have a hard time recommending you buy a MacBook when Windows Live Captions a) exists, b) is so much better, and c) [is only going to improve as Copilot+ PCs begin rolling out](https://www.microsoft.com/en-us/windows/copilot-plus-pcs?r=1)[^4] in the next few months. I'm in this boat (live captions are #1 or #2 on my list), and I'll be strongly considering a Copilot+ laptop from Microsoft or Dell for my next personal laptop.
+If you're a power user and live captioning sits high on your priority list, I have a hard time recommending you buy a MacBook when Windows Live Captions a) exists, b) is so much better, and c) [likely to improve as Copilot+ PCs begin rolling out](https://www.microsoft.com/en-us/windows/copilot-plus-pcs?r=1)[^4] in the next few months. I'm in this boat (live captions are #1 or #2 on my list), and I'll be strongly considering a Copilot+ laptop from Microsoft or Dell for my next personal laptop.
 
 Reader, if you're on Apple's accessibility team and can offer any feedback or clarifications on this, please feel free to get in touch. I'd genuinely love to know what the reasons for this limitation are, and I'm happy to update the post with that.
 
@@ -108,6 +108,6 @@ Reader, if you're on Apple's accessibility team and can offer any feedback or cl
 
 [^3]: Microsoft Teams, I'm looking at you.
 
-[^4]: As of this writing in early October 2024, scroll down to "Copilot+ PC features" and watch the video for live captions: they're adding real-time translation between languages.
+[^4]: As of this writing in early October 2024, scroll down to "Copilot+ PC features" and watch the video for live captions: they're adding real-time captioning in one language and then translation to another.
 
 [^5]: Frankly, there's a million easier ways to do that.
