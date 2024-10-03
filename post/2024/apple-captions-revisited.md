@@ -37,13 +37,13 @@ Boy, do I wish this section was longer. If I'm reviewing the _actual captions_ i
 
 ## The less good
 
-I have some relatively minor technical nitpicks.
+I have some relatively minor but annoying technical nitpicks.
 
-First, there's one fairly major regression I've noticed, which is that on longer (20+ minute) YouTube videos, the captions tend to fall behind. Which is to say: I'll start a video, turn on the YouTube captions, then turn on Live Captions. By the end of the video, Live Captions is noticeably (a minute or more) behind, and continue "catching up" even after pausing the video and no sound is playing. This wasn't an issue on previous macOS versions, so hopefully it's a minor glitch they'll fix in macOS 15.1.
+First, on longer (20+ minute) YouTube videos, the captions tend to fall behind. Which is to say: I'll start a video, turn on the YouTube captions, then turn on Live Captions. By the end of the video, Live Captions is noticeably (a minute or more) behind, and continues "catching up" even after pausing the video and no sound is playing. This wasn't an issue on previous macOS versions, so hopefully it's a minor glitch they'll fix in macOS 15.1.
 
-Second, getting captions to display demands too much fiddling. I keep the Live Captions icon in my menu bar so I can quickly pause/unpause them, but if they've been paused for an extended period of time they often won't work. I find myself frequently searching for Live Captions in System Settings, then toggling them off and back on. About 25% of the time it'll start displaying captions, and the other 75% of the time I need to go back to the menu bar and pause/unpause them _again_ before they'll start working. The second pause/unpause step is a regression from previous macOS versions, but needing to toggle them off/on has always been a persistent theme.
+Second, getting captions to display demands too much fiddling. I keep the Live Captions icon in my menu bar so I can quickly pause/unpause them, but if they've been paused for an extended period of time they often won't work. I find myself frequently searching for Live Captions in System Settings, then toggling them off and back on. About 25% of the time it'll start displaying captions, and the other 75% of the time I need to go back to the menu bar and pause/unpause them _again_ before they'll start working. The second pause/unpause step is a regression from previous macOS versions, but needing to toggle them off/on was an issue in previous versions.
 
-I'm assuming the off/on toggle is resetting the speech recognition engine after it gets into a confused state, and I've seen ASR engines in other captioning apps exhibit similar behavior, and even Windows Live Captions needs an occasional reset. However, I really wish pausing/unpausing from the menu bar icon was sufficient to do this; digging into the settings app several times a week is annoying.
+I'm assuming the off/on toggle resets the speech recognition engine after it gets into a confused state, and I've seen ASR engines in other captioning apps exhibit similar behavior. However, I really wish pausing and unpausing from the menu bar icon was sufficient to do this; digging into the settings app several times a week is annoying.
 
 ## Pause, and consider
 
