@@ -1,15 +1,48 @@
 :root {
-    --header_gradient: linear-gradient(to right, #f2777a, #f99157, #ffcc66, #99cc99, #66cccc, #6699cc, #cc99cc, #d27b53);
+    --header_gradient: linear-gradient(
+        to right,
+        #f2777a,
+        #f99157,
+        #ffcc66,
+        #99cc99,
+        #66cccc,
+        #6699cc,
+        #cc99cc,
+        #d27b53
+    );
     --link_gradient: linear-gradient(to right, #f2777a, #cc99cc, #f2777a);
 }
 
 @font-face {
-    font-family: 'Merriweather';
-    src: url('/fonts/Merriweather-Regular.ttf') format('truetype');
+    font-family: "Merriweather";
+    src: url("/fonts/Merriweather-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Merriweather";
+    src: url("/fonts/Merriweather-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Merriweather";
+    src: url("/fonts/Merriweather-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Merriweather";
+    src: url("/fonts/Merriweather-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
 }
 
 body {
-    font-family: 'Merriweather';
+    font-family: "Merriweather";
     margin: 0;
     padding: 0;
     background-color: f2f0ec;
@@ -28,37 +61,57 @@ header {
     margin: 0;
     padding: 10;
     color: #eee;
-    background-color: rgb(45,45,45);
+    background-color: rgb(45, 45, 45);
 }
 
 header {
     margin-top: 0;
     border: none;
     border-bottom: 15px solid;
-    border-image: linear-gradient(to right,
-    #2d2d2d 0%,  #2d2d2d 3.125%,
-    #393939 3.125%, #393939 9.375%,
-    #515151 9.375%, #515151 15.625%,
-    #747369 15.625%, #747369 21.875%,
-    #a09f93 21.875%, #a09f93 28.125%,
-    #d3d0c8 28.125%, #d3d0c8 34.375%,
-    #e8e6df 34.375%, #e8e6df 40.625%,
-    #f2f0ec 40.625%, #f2f0ec 46.875%,
-    #f2777a 46.875%, #f2777a 53.125%,
-    #f99157 53.125%, #f99157 59.375%,
-    #ffcc66 59.375%, #ffcc66 65.625%,
-    #99cc99 65.625%, #99cc99 71.875%,
-    #66cccc 71.875%, #66cccc 78.125%,
-    #6699cc 78.125%, #6699cc 84.375%,
-    #cc99cc 84.375%, #cc99cc 90.625%,
-    #d27b53 90.625%, #d27b53 100%
-  ) 1; /* 1 specifies that the border image slices are 1 unit wide */
-  border-image-slice: 1; /* Make sure the entire gradient is visible */
-  padding: 10px; /* Add padding to keep the content away from the border */
-  box-sizing: border-box; /* Include padding in the element's total width */
+    border-image: linear-gradient(
+            to right,
+            #2d2d2d 0%,
+            #2d2d2d 3.125%,
+            #393939 3.125%,
+            #393939 9.375%,
+            #515151 9.375%,
+            #515151 15.625%,
+            #747369 15.625%,
+            #747369 21.875%,
+            #a09f93 21.875%,
+            #a09f93 28.125%,
+            #d3d0c8 28.125%,
+            #d3d0c8 34.375%,
+            #e8e6df 34.375%,
+            #e8e6df 40.625%,
+            #f2f0ec 40.625%,
+            #f2f0ec 46.875%,
+            #f2777a 46.875%,
+            #f2777a 53.125%,
+            #f99157 53.125%,
+            #f99157 59.375%,
+            #ffcc66 59.375%,
+            #ffcc66 65.625%,
+            #99cc99 65.625%,
+            #99cc99 71.875%,
+            #66cccc 71.875%,
+            #66cccc 78.125%,
+            #6699cc 78.125%,
+            #6699cc 84.375%,
+            #cc99cc 84.375%,
+            #cc99cc 90.625%,
+            #d27b53 90.625%,
+            #d27b53 100%
+        )
+        1; /* 1 specifies that the border image slices are 1 unit wide */
+    border-image-slice: 1; /* Make sure the entire gradient is visible */
+    padding: 10px; /* Add padding to keep the content away from the border */
+    box-sizing: border-box; /* Include padding in the element's total width */
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: border-box;
 }
 
@@ -69,6 +122,10 @@ header {
     padding: 2em;
     line-height: 1.65em;
     font-size: 1.15em;
+}
+
+.content {
+    margin: 0 10%;
 }
 
 nav ul {
@@ -90,7 +147,8 @@ nav ul li {
     line-height: 1.5em;
 }
 
-nav ul li a, nav ul li a:visited {
+nav ul li a,
+nav ul li a:visited {
     color: #6699cc;
     text-decoration: none;
 }
@@ -136,5 +194,5 @@ header a {
 @media screen and (max-width: 1024px) {
     .post_excerpt p {
         padding-left: 1.25em;
-    }    
+    }
 }
