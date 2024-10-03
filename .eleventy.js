@@ -35,6 +35,10 @@ export default function (eleventyConfig) {
             .reverse()
             .value();
     });
+
+    eleventyConfig.addCollection("captions_project", function (collection) {
+        return collection.getFilteredByTag("captions").reverse();
+    });
 };
 
 function extractExcerpt(article) {
