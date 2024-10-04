@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Checkout master branch
-        uses: actions/checkout@latest
+        uses: actions/checkout@v4
       - name: Build 11ty Site (staging)
         uses: edmistond/actions-eleventy@update_deps
         with:
@@ -35,7 +35,7 @@ jobs:
 
     steps:
       - name: Checkout master branch
-        uses: actions/checkout@latest
+        uses: actions/checkout@v4
       - name: Build 11ty Site (production)
         uses: edmistond/actions-eleventy@update_deps
         with:
