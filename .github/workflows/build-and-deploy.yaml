@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Checkout master branch
-        uses: actions/checkout@v4
+        uses: actions/checkout@latest
       - name: Build 11ty Site (staging)
         uses: edmistond/actions-eleventy@update_deps
         with:
@@ -27,4 +27,26 @@ jobs:
           USER: ${{ secrets.USER }}
           PRIVATE_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
           REPOSITORY_PATH: './_site/*'
-          SERVER_PATH: 'staging.davidedmiston.com'
+          SERVER_PATH: 'staging.davidedmiston.com/'
+
+  build-deploy-production:
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+      - name: Checkout master branch
+        uses: actions/checkout@latest
+      - name: Build 11ty Site (production)
+        uses: edmistond/actions-eleventy@update_deps
+        with:
+          args: --output _site
+          install_dependencies: true
+      - name: Deploy files via rsync
+        uses: D3rHase/rsync-deploy-action@latest
+        with:
+          HOST: ${{ secrets.HOST }}
+          PORT: ${{ secrets.PORT }}
+          USER: ${{ secrets.USER }}
+          PRIVATE_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          REPOSITORY_PATH: './_site/*'
+          SERVER_PATH: 'davidedmiston.com/'

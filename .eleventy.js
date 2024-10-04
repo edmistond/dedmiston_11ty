@@ -22,6 +22,8 @@ export default function (eleventyConfig) {
         eleventyConfig.ignores.add("robots.txt");
     }
 
+    eleventyConfig.ignores.add("README.md");
+
     let markdownLibrary = markdownIt(markdownOptions).use(markdownItFootnote);
     eleventyConfig.setLibrary("md", markdownLibrary);
 
