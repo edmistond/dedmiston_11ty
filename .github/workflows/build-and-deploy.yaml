@@ -1,0 +1,37 @@
+name: Build Eleventy Site
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-deploy-staging:
+    runs-on: ubuntu-latest
+    environment: staging
+
+    steps:
+      - name: Checkout master branch
+        uses: actions/checkout@v2
+      - name: Build 11ty Site (staging)
+        uses: edmistond/actions-eleventy@update_deps
+        with:
+          args: --output _site
+          install_dependencies: true
+          site_url: https://staging.davidedmiston.com
+      - name: copy robots.txt
+        run: cp robots_staging.txt _site/robots.txt
+      - name: Deploy to staging
+        uses: up9cloud/action-rsync@master
+        env:
+          HOST: davidedmiston.com
+          USER: edmistond
+          KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          SOURCE: _site/
+          TARGET: staging.davidedmiston.com/
+          ARGS: -avz --delete
+          VERBOSE: true
+          MODE: push
+          RUN_SCRIPT_ON: source
+      - name: log completion
+        run: echo "Deployed to staging at $(date -u)"

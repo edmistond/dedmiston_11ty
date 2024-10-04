@@ -40,3 +40,4 @@ yarn-error.log
 # Windows
 Thumbs.db
 .zed
+ghactions.secret
