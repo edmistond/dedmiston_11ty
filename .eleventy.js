@@ -14,6 +14,14 @@ export default function (eleventyConfig) {
         linkify: true,
     };
 
+    // if process.env.INPUT_SITE_URL contains staging, include robots.txt
+    if (process.env.INPUT_SITE_URL && process.env.INPUT_SITE_URL.toLocaleLowerCase().includes("staging")) {
+        eleventyConfig.addPassthroughCopy("robots.txt");
+    }
+    else {
+        eleventyConfig.ignores.add("robots.txt");
+    }
+
     let markdownLibrary = markdownIt(markdownOptions).use(markdownItFootnote);
     eleventyConfig.setLibrary("md", markdownLibrary);
 
