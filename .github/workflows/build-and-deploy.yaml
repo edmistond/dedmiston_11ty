@@ -33,5 +33,6 @@ jobs:
           VERBOSE: true
           MODE: push
           RUN_SCRIPT_ON: source
-      - name: log completion
-        run: echo "Deployed to staging at $(date -u)"
+          PRE_SCRIPT: |
+            cp robots_staging.txt _site/robots.txt
+          POST_SCRIPT: "echo done at: && date -u"
