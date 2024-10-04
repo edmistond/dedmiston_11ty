@@ -101,6 +101,12 @@ header {
     line-height: 1.5em;
 }
 
+@media screen and (max-width: 600px) {
+    .content {
+        margin: 0 5%;
+    }
+}
+
 .content p {
     margin: 2em 0;
 }
