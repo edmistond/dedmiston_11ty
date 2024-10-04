@@ -19,8 +19,6 @@ jobs:
           args: --output _site
           install_dependencies: true
           site_url: https://staging.davidedmiston.com
-      - name: copy robots.txt
-        run: cp robots_staging.txt _site/robots.txt
       - name: Deploy to staging
         uses: up9cloud/action-rsync@master
         env:
