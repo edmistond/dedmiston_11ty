@@ -1,7 +1,7 @@
 import markdownIt from "markdown-it";
 import markdownItFootnote from "markdown-it-footnote";
 
-function configureMarkdown(eleventyConfig) {
+function markdownConfig(eleventyConfig) {
     const markdownOptions = {
         html: true,
         breaks: true,
@@ -12,4 +12,4 @@ function configureMarkdown(eleventyConfig) {
       eleventyConfig.setLibrary("md", markdownLibrary);    
 }
 
-export { configureMarkdown };
+export { markdownConfig };

@@ -1,9 +1,9 @@
 import { DateTime } from "luxon";
 
-function configureFilters(eleventyConfig) {
+function filterConfig(eleventyConfig) {
     eleventyConfig.addFilter("readableDate", (date) => {
         return DateTime.fromJSDate(date, { zone: "utc" }).toFormat("dd LLL yyyy");
       });    
 }
 
-export { configureFilters };
+export { filterConfig };

@@ -1,6 +1,6 @@
 import _ from "lodash";
 
-function configureCollections(eleventyConfig) {
+function collectionConfig(eleventyConfig) {
   eleventyConfig.addCollection("recent_posts", function (collection) {
     return collection.getFilteredByTag("post").reverse().slice(0, 8);
   });
@@ -18,4 +18,4 @@ function configureCollections(eleventyConfig) {
   });
 }
 
-export { configureCollections };
+export { collectionConfig };
