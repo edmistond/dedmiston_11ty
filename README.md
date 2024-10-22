@@ -1,3 +1,6 @@
+---
+eleventyExcludeFromCollections: true
+---
 # davidedmiston.com
 
 This is the repository for my new eleventy-based blog version.
