@@ -147,12 +147,14 @@ nav {
                 text-decoration: none;
             }
 
-            a svg {
+            a img {
                 color: #363636;
+                height: 24px;
+                width: auto;
             }
 
-            a:hover svg {
-                color: #339;
+            a:hover img {
+                filter: brightness(0) saturate(100%) invert(32%) sepia(100%) saturate(747%) hue-rotate(180deg) brightness(92%) contrast(92%);
             }
         }
     }

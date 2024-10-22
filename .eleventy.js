@@ -10,6 +10,7 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("fonts");
+  eleventyConfig.addPassthroughCopy("assets/svg");
 
   markdownConfig(eleventyConfig);
   filterConfig(eleventyConfig);
