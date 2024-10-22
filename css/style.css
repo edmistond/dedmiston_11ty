@@ -18,7 +18,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: f2f0ec;
-    color: #2d2d2d;
+    color: #363636;
 }
 
 footer {
@@ -125,31 +125,58 @@ nav ul {
 
 nav ul li {
     display: inline;
-    font-weight: bold;
     padding: 0 1em;
     line-height: 1.5em;
 }
 
-nav ul li a,
-nav ul li a:visited {
-    color: #6699cc;
-    text-decoration: none;
-}
+nav {
+    ul {
+        li {
+            a {
+                font-weight: normal;
+                text-decoration: none;
+            }
 
+            a:visited {
+                color: #369;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: #369;
+                text-decoration: none;
+            }
+
+            a svg {
+                color: #363636;
+            }
+
+            a:hover svg {
+                color: #339;
+            }
+        }
+    }
+}
 a {
-    color: #6699cc;
+    text-decoration: none;
+    color: #336699;
     background: transparent;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
 }
 
+a {
+    font-weight: bold;
+}
+
 a:hover {
-    background: var(--link_gradient);
-    -webkit-background-clip: text;
+    text-decoration: underline;
+    /* background: var(--link_gradient); */
+    /* -webkit-background-clip: text;
     -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    background-clip: text; */
+    /* color: transparent; */
 }
 
 header a {
