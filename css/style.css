@@ -1,173 +1,186 @@
 :root {
-  --main-text-color: #363636;
-  --main-link-color: #336699;
-  --post-date-color: #666;
+    --main-text-color: #363636;
+    --main-link-color: #336699;
+    --post-date-color: #666;
 }
 
 @font-face {
-  font-family: "VictorMono";
-  src: url("/fonts/VictorMono-Regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "VictorMono";
+    src: url("/fonts/VictorMono-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "VictorMono";
-  src: url("/fonts/VictorMono-Bold.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
+    font-family: "VictorMono";
+    src: url("/fonts/VictorMono-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "VictorMono";
-  src: url("/fonts/VictorMono-Italic.woff2") format("woff2");
-  font-weight: normal;
-  font-style: italic;
+    font-family: "VictorMono";
+    src: url("/fonts/VictorMono-Italic.woff2") format("woff2");
+    font-weight: normal;
+    font-style: italic;
 }
 
 @font-face {
-  font-family: "VictorMono";
-  src: url("/fonts/VictorMono-BoldItalic.woff2") format("woff2");
-  font-weight: bold;
-  font-style: italic;
+    font-family: "VictorMono";
+    src: url("/fonts/VictorMono-BoldItalic.woff2") format("woff2");
+    font-weight: bold;
+    font-style: italic;
 }
 
 body {
-  font-family: "VictorMono", Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: f2f0ec;
-  color: var(--main-text-color);
+    font-family: "VictorMono", Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: f2f0ec;
+    color: var(--main-text-color);
 }
 
 footer {
-  text-align: center;
+    text-align: center;
 }
 
 footer .Footnotes {
-  text-align: left !important;
+    text-align: left !important;
 }
 
 .container {
-  justify-content: space-between;
-  margin: 0 15%;
-  padding: 2em;
-  line-height: 1.65em;
-  font-size: 1.15em;
-  line-height: 1.5em;
+    justify-content: space-between;
+    margin: 0 15%;
+    padding: 2em;
+    line-height: 1.65em;
+    font-size: 1.15em;
+    line-height: 1.5em;
 }
 
 @media screen and (max-width: 600px) {
-  .container {
-    margin: 0 5%;
-  }
+    .container {
+        margin: 0 5%;
+    }
 }
 
 .content p {
-  margin: 2em 0;
+    margin: 2em 0;
 }
 
 section.main-title {
-  margin: 0;
-  padding: 10;
-  display: flex;
-  align-content: center;
-  justify-content: space-between;
+    margin: 0;
+    padding: 10;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
 
-  a {
-    color: var(--main-text-color);
-  }
+    a {
+        color: var(--main-text-color);
+    }
 }
 
 section.navigation {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: space-between;
-  list-style: none; /* Removes bullet points from list */
-  padding: 0;
-  margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    list-style: none; /* Removes bullet points from list */
+    padding: 0;
+    margin: 0;
 
-  ul {
-    li {
-      display: inline;
-      padding: 0 1em;
-      line-height: 1.5em;
+    ul {
+        li {
+            display: inline;
+            padding: 0 1em;
+            line-height: 1.5em;
 
-      a {
-        font-weight: normal;
-        text-decoration: none;
-      }
+            a {
+                font-weight: normal;
+                text-decoration: none;
+            }
 
-      a:visited {
-        color: #369;
-        text-decoration: none;
-      }
+            a:visited {
+                color: #369;
+                text-decoration: none;
+            }
 
-      a:hover {
-        color: #369;
-        text-decoration: none;
-      }
+            a:hover {
+                color: #369;
+                text-decoration: none;
+            }
 
-      a img {
-        color: var(--main-text-color);
-        height: 20px;
-        width: auto;
-      }
+            a img {
+                color: var(--main-text-color);
+                height: 20px;
+                width: auto;
+            }
 
-      a:hover img {
-        filter: brightness(0) saturate(100%) invert(32%) sepia(100%)
-          saturate(747%) hue-rotate(180deg) brightness(92%) contrast(92%);
-      }
+            a:hover img {
+                filter: brightness(0) saturate(100%) invert(32%) sepia(100%)
+                    saturate(747%) hue-rotate(180deg) brightness(92%)
+                    contrast(92%);
+            }
+        }
     }
-  }
+}
+
+section {
+    code {
+        font-family: "VictorMono", monospace;
+        font-size: 0.9em;
+        background-color: #f2f2f2;
+        padding: 0.25em;
+        border-radius: 0.25em;
+    }
 }
 
 section.article_list {
-  h1, h2 {
-    font-size: 1.15em;
-  }
-  h3 {
-    font-size: 1em;
-  }
+    h1,
+    h2 {
+        font-size: 1.15em;
+    }
+    h3 {
+        font-size: 1em;
+    }
 }
 
 section.post {
-  h1 {
-    font-size: 1.15em;
-  }
+    h1 {
+        font-size: 1.15em;
+    }
 
-  h2, h3 {
-    font-size: 1em;
-  }
+    h2,
+    h3 {
+        font-size: 1em;
+    }
 }
 
 a {
-  text-decoration: none;
-  color: var(--main-link-color);
-  font-weight: bold;
+    text-decoration: none;
+    color: var(--main-link-color);
+    font-weight: bold;
 }
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .post_excerpt h3 {
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 .post_excerpt p {
-  padding-left: 2.5em;
+    padding-left: 2.5em;
 }
 
 .post_date {
-  font-size: 0.8em;
-  color: var(--post-date-color);
-  font-style: italic;
+    font-size: 0.8em;
+    color: var(--post-date-color);
+    font-style: italic;
 }
 
 @media screen and (max-width: 1024px) {
-  .post_excerpt p {
-    padding-left: 1.25em;
-  }
+    .post_excerpt p {
+        padding-left: 1.25em;
+    }
 }
