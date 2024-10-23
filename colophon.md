@@ -4,7 +4,7 @@ title: 'Colophon'
 eleventyExcludeFromCollections: true
 ---
 
-Built using the [11ty framework](https://11ty.dev), auto-deployed from its [repository](https://github.com/edmistond/dedmiston_11ty) to [Dreamhost](https://dreamhost.com) by [GitHub Actions](https://docs.github.com/en/actions). Theme is custom-built with slight CSS help from Github Copilot. Typeset in [Victor Mono](https://rubjo.github.io/victor-mono/); it's a great programming font too.
+Built using the [11ty framework](https://11ty.dev), auto-deployed from its [repository](https://github.com/edmistond/dedmiston_11ty) to [Dreamhost](https://dreamhost.com) by [GitHub Actions](https://docs.github.com/en/actions). Theme is custom-built with slight CSS help from Github Copilot. Typeset in [Rethink Sans](https://fonts.google.com/specimen/Rethink+Sans).
 
 Header SVG icons from [Bootstrap](https://icons.getbootstrap.com/), except for the BlueSky icon which is from their media kit.
 
