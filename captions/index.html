@@ -4,21 +4,23 @@ title: "The AutoCaptions Project"
 eleventyExcludeFromCollections: true
 ---
 
-<h1>The AutoCaptions Project</h1>
+<section class="article_list">
+    <h1>The AutoCaptions Project</h1>
 
-<p>
-    This is a continuation and expansion of my late 2023
-    <a href="{{ '/post/2023/10/captioning-tools-extravaganza' | url }}"
-        >closed captioning overview post</a
-    >; these tools continue improving and evolving, and I want a central place
-    to consolidate my writing about them.
-</p>
+    <p>
+        This is a continuation and expansion of my late 2023
+        <a href="{{ '/post/2023/10/captioning-tools-extravaganza' | url }}"
+            >closed captioning overview post</a
+        >; these tools continue improving and evolving, and I want a central place
+        to consolidate my writing about them.
+    </p>
 
-{% for post in collections.captions_project %}
-<div class="post_excerpt">
-    <div>
-        {{ post.date | readableDate }} -
-        <a href="{{ post.url }}">{{ post.data.title }}</a>
+    {% for post in collections.captions_project %}
+    <div class="post_excerpt">
+        <div>
+            {{ post.date | readableDate }} -
+            <a href="{{ post.url }}">{{ post.data.title }}</a>
+        </div>
     </div>
-</div>
-{% endfor %}
+    {% endfor %}
+<section class="article_list">

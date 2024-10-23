@@ -124,7 +124,7 @@ section.navigation {
 }
 
 section.article_list {
-  h2 {
+  h1, h2 {
     font-size: 1.15em;
   }
   h3 {
