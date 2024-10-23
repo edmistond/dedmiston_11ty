@@ -4,24 +4,14 @@ title: 'Colophon'
 eleventyExcludeFromCollections: true
 ---
 
-This site is built using the [11ty framework](https://11ty.dev), auto-deployed from its [repository](https://github.com/edmistond/dedmiston_11ty) to [Dreamhost](https://dreamhost.com) by [GitHub Actions](https://docs.github.com/en/actions).
+Built using the [11ty framework](https://11ty.dev), auto-deployed from its [repository](https://github.com/edmistond/dedmiston_11ty) to [Dreamhost](https://dreamhost.com) by [GitHub Actions](https://docs.github.com/en/actions). Theme is custom-built with slight CSS help from Github Copilot. Typeset in [Victor Mono](https://rubjo.github.io/victor-mono/); it's a great programming font too.
 
-## Current plugins
+Header SVG icons from [Bootstrap](https://icons.getbootstrap.com/), except for the BlueSky icon which is from their media kit.
 
-- [eleventy-plugin-syntaxhighlight](https://www.11ty.dev/docs/plugins/syntaxhighlight/)
+I may use AI tools to proofread drafts for wording, passive voice issues, verb-subject agreement, and other sanity-checking before posting, but I don't post AI-generated content.
 
-The sitewide font used is [Victor Mono](https://rubjo.github.io/victor-mono/); it's a great programming font too.
+Special thanks to the following authors and their sites for inspiration and information on implementing functionality in 11ty:
 
-## Editors
-
-I am platform-agnostic and work on both Mac and Windows. Most posts written in [VS Code](https://code.visualstudio.com) or [Zed](https://zed.dev/), sometimes drafted in [Obsidian](https://obsidian.md). I often have a local instance of [LanguageTool](https://www.languagetool.org/) running in Docker to flag problems like excessive passive voice.
-
-## AI Usage
-
-Generally, I do not use AI for to write articles or generate ideas, but may use it for light editing. For example, I may give Claude a nearly-completed draft and a prompt like this:
-
-> From the perspective of a skilled English editor, review this file. Does it cover everything adequately? Are there major structural issues in the writing? Is there anything that could be more succinct?
-
-This often turns up issues for me to consider and revise; it's a good "stop and think about this for a second here..." prompt, and gives me a virtual set of eyes to look something over. As far as data privacy goes, I don't allow OpenAI or Claude to train on my conversations, but I assume anything I post online gets into a training corpus and don't worry too much about that aspect of it.
-
-GitHub Copilot helped with the CSS on this site; I'm rusty on front-end and sometimes use it to look information up quicker than digging through Google search results, or to do text/code transformations that are straightforward but tedious.
+- [Cory Dransfeldt](https://coryd.dev/) - Using SVGs for the header icons
+- [Chris Krycho](https://v5.chriskrycho.com/) - Implementing Twitter/OpenGraph unfurls
+- [Desmond Rivet](https://desmondrivet.com/) - some pointers on cache busting, although I used a different approach
