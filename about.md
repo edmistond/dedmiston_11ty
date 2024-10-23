@@ -4,7 +4,7 @@ title: 'About Me'
 eleventyExcludeFromCollections: true
 ---
 
-Hi! I'm David, often [found](https://twitter.com/edmistond/) [online](https://github.com/edmistond/) as **edmistond**.
+Hi! I'm David, often [found](https://bsky.app/profile/edmistond.bsky.social) [online](https://github.com/edmistond/) as **edmistond**.
 
 I'm an experienced polyglot software developer who's worked across the entire stack in a variety of languages. I've been in the industry for over two decades now, with a track record of consistently delivering projects with substantial business value to my employers and to our clients.
 
