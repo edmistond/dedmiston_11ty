@@ -4,6 +4,20 @@
     --post-date-color: #666;
     --main-background-color: #ededed;
     --code-background-color: #d2d2d2;
+    --svg-filter: invert(16%) sepia(0%) saturate(0%) hue-rotate(354deg) brightness(104%) contrast(88%);
+    --svg-hover-filter: invert(30%) sepia(98%) saturate(336%) hue-rotate(168deg) brightness(99%) contrast(92%);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --main-text-color: #ededed;
+        --main-link-color: #88c0d0;
+        --post-date-color: #999;
+        --main-background-color: #2e3440;
+        --code-background-color: #3b4252;
+        --svg-filter: invert(99%) sepia(0%) saturate(96%) hue-rotate(176deg) brightness(115%) contrast(86%);
+        --svg-hover-filter: invert(92%) sepia(43%) saturate(2390%) hue-rotate(165deg) brightness(88%) contrast(83%);
+    }
 }
 
 @font-face {
@@ -97,14 +111,13 @@ section.navigation {
 
             a img {
                 color: var(--main-text-color);
+                filter: var(--svg-filter);
                 height: 20px;
                 width: auto;
             }
 
             a:hover img {
-                filter: brightness(0) saturate(100%) invert(32%) sepia(100%)
-                    saturate(747%) hue-rotate(180deg) brightness(92%)
-                    contrast(92%);
+                filter: var(--svg-hover-filter);
             }
         }
     }
