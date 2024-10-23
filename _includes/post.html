@@ -1,15 +1,16 @@
 ---
 layout: main_layout.html
 ---
+<section class="post">
+    <h1>{{ title }}</h1>
+    <p class="post_date">{{ date | readableDate }}</p>
 
-<h1>{{ title }}</h1>
-<p class="post_date">{{ date | readableDate }}</p>
+    <div class="main_post">
+    {{ content }}
+    </div>
 
-<div class="main_post">
-{{ content }}
-</div>
-
-<div>
-    <p><a href="javascript:history.back()">Back to Previous Page</a></p>
-    <p><a href="archive/">View All Posts</a></p>
-</div>
+    <div>
+        <p><a href="javascript:history.back()">Back to Previous Page</a></p>
+        <p><a href="archive/">View All Posts</a></p>
+    </div>
+</section>
