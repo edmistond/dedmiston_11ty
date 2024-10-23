@@ -2,6 +2,8 @@
     --main-text-color: #363636;
     --main-link-color: #336699;
     --post-date-color: #666;
+    --main-background-color: #ededed;
+    --code-background-color: #d2d2d2;
 }
 
 @font-face {
@@ -20,7 +22,7 @@ body {
     font-family: "RethinkSans", Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ededed;
+    background-color: var(--main-background-color);
     color: var(--main-text-color);
 }
 
@@ -84,12 +86,12 @@ section.navigation {
             }
 
             a:visited {
-                color: #369;
+                color: var(--main-link-color);
                 text-decoration: none;
             }
 
             a:hover {
-                color: #369;
+                color: var(--main-link-color);
                 text-decoration: none;
             }
 
@@ -110,9 +112,9 @@ section.navigation {
 
 section {
     code {
-        font-family: "VictorMono", monospace;
+        font-family: "Cascadia Code", monospace;
         font-size: 0.9em;
-        background-color: #d2d2d2;
+        background-color: var(--code-background-color);
         padding: 0.25em;
         border-radius: 0.25em;
     }
