@@ -1,7 +1,6 @@
 ---
 title: "A blog facelift, and introducing the AutoCaptions Project"
 date: 2024-10-23T00:00:01-05:00
-tags: [post, pinned]
 ---
 
 Since moving my blog to [11ty](https://11ty.dev) earlier this month when I published [my extended review of Apple's Live Captions]({{ '/post/2024/apple-captions-revisited' | url }}), I've inteded on more changes to modernize the site a bit<!-- more -->. In particular, I wanted something less cluttered, and with niceties missing in the previous migration, like cache-busting digests on the CSS and SVG assets. Also modularized and cleaned up my `.eleventy.js` config file, a minor but a pleasing quality of life improvement to an obsessive nerd like myself.
