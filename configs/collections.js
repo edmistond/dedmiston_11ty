@@ -16,8 +16,6 @@ function collectionConfig(eleventyConfig) {
       .reverse()
       .value();
   });
-
-  
 }
 
 export { collectionConfig };
