@@ -40,6 +40,7 @@ Another point worth mentioning: heavy users of captioning tools (like me) someti
 - Works with screen recording active (in fact, it requires it)
 - As good or better than Apple's live captions under some scenarios, on-par with April ASR
 - Highlights as-yet-unfinalized words
+- Very customizable: font family, size, and colors all can be changed to your preference
 
 ### The bad
 
@@ -47,10 +48,10 @@ Another point worth mentioning: heavy users of captioning tools (like me) someti
 - Application bugs
 - Poor performance with microphone audio and multiple speakers
 
-**Overall**: So long as you - or perhaps, your organization - aren't concerned with the developer being from China[^2], I think it's worth giving this a try. I subscribed to it since it's pretty inexpensive, and there's been scenarios where I've found it useful.
+**Overall**: So long as you - or perhaps, your organization - aren't concerned with the developer being from China[^2], I think it's worth giving this a try. I subscribed to it since it's pretty inexpensive ($5/mo or $31.99 per year as of this writing), and there's been scenarios where I've found it useful.
 
 [^1]: This is not a "China bad" argument by any means. I'm only pointing out that some people and organizations are more concerned by this than others, and evaluate risk differently. Just to pick an extreme opposite, my risk evaluation isn't the same as an intelligence agency's, and I expect that almost _any_ automatic captioning tool - which by definition has to capture audio! - would make their information security people break out in hives.
 
 [^2]: See previous footnote re: China.
 
-[^3]: This sort of thing falls under "why do you even need to know" for me, but I'm more privacy conscious than most.
+[^3]: This sort of thing falls under "why do you even need to know" for me, being relatively privacy-conscious.
