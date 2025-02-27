@@ -37,7 +37,7 @@ Another point worth mentioning: heavy users of captioning tools (like me) someti
 
 ### The good
 
-- Works with screen recording active (in fact, it requires it)
+- Works with screen recording active (in fact, it requires screen recording permissions since it uses those APIs)
 - As good or better than Apple's live captions under some scenarios, on-par with April ASR
 - Highlights as-yet-unfinalized words
 - Very customizable: font family, size, and colors all can be changed to your preference
