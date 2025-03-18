@@ -1,6 +1,6 @@
 ---
 title: "Windows Live Captions"
-date: 2025-03-17T00:00:01-05:00
+date: 2025-03-17T22:45:01-05:00
 tags: [captions, post]
 ---
 
