@@ -32,6 +32,12 @@ Also, if you're using this to live caption a meeting - as one does, this is an a
 
 Of course, that's just my opinion, I could be wrong.
 
+> **Addendum, March 19**: After discussing with a friend, I may have been _slightly_ too snarky about this, even if that was the tone I intended. Obviously, it's not that Apple lacks the ability to display captions while screen recording is active, it's that they made a deliberate choice not to. If you haven't guessed already, I disagree with that choice. I'm sure they have a _reason_ behind it, but their corporate culture is allergic to communicating the reasons behind their decisions, so we have no idea what it is.
+
+> That same friend asked an acquaintance with a legal background in IP law and they had two plausible-ish theories: that it's either concerns about one vs two party consent laws[^3], or that Apple doesn't want media companies finding reasons to come after them and captions fall into a legal gray area they don't want to risk. Still, if someone wants to record live captions, they _will_ find a way[^4]. Apple controls the OS, so the immediate solution that comes to my mind is hiding the window from screen recording tools (technically feasible, it's an ability abused by many AI interview cheating tools), and disallowing users from selecting and copying the captions.
+
+> The question I have, though: Why is Apple the only company providing a live captioning option that's concerned about this? For example, if you enable live captions in Teams, it does not pop a notification to everyone the way that turning on recording or transcription does.
+
 ## What else is good?
 
 Getting back out of rant territory, I've already noted that it's noise resilient, given how well it works while playing games. This also means it handles multiple speakers well, making it great for meetings. No, it won't do speaker identification (I'm unaware of any local speech to text solution that supports real time speaker diarization), and it won't magically deal with cross-talk. Then again, nothing short of Teams captioning does, and even that struggles a bit. Still, I've seen these tools get very confused with audio garbles or people talking over each other, but Windows Live Captions handles this with aplomb. Sometimes the process crashes and needs to be restarted, but it's rare.
@@ -62,3 +68,7 @@ Anyway, I bought another MBP last fall fully conscious of the tradeoffs. I hate 
 [^1]: I started working on notes for this review back in December. Since then, I've enabled Discord's attentuation feature which reduces the audio of other applications when people are talking to make the voice chat more prominent, which seems to further improve accuracy.
 
 [^2]: If you recognize this phrase, congratulations: you are old enough to remember when Dennis Miller was funny.
+
+[^3]: From some quick Googling, it's ambiguous whether a transcription of a recording falls under the same one vs two party consent laws an actual recording does... definitely getting into "consult a lawyer if you're genuinely concerned" territory.
+
+[^4]: I believe Dr. Ian Malcolm put it best: ["I'm simply saying that life, uh... finds a way."](https://www.imdb.com/title/tt0107290/quotes/?item=qt0463040)
