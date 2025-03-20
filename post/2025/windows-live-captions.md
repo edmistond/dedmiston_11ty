@@ -1,8 +1,10 @@
 ---
-title: "Windows Live Captions"
-date: 2025-03-17T22:45:01-05:00
+title: "Windows Live Captions Review: March 2025"
+date: 2025-03-18T00:00:01-05:00
 tags: [captions, post]
 ---
+
+_Note: This was originally published under the wrong year folder, and since I added a substantial addendum I decided to republish it under the correct folder and with an updated title. Management regrets the error, and the person in charge of creating files in year-appropriate folders has been sacked._
 
 We've talked about [Apple Live Captions]({{ '/post/2024/apple-captions-revisited' | url }}), now let's talk about its biggest competition: Microsoft's Windows Live Captions. It was officially introduced in Windows 11 22H2, and unofficially introduced in Windows 11 Insiders edition sometime in late 2021... and is the sole reason why I ran Insider builds for the better part of a year.
 
