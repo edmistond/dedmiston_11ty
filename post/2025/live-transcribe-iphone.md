@@ -8,4 +8,4 @@ The Auto Captions project returns with our latest installment - today we're look
 
 ## Let's Start at the Very Beginning
 
-It is, after all, a very good place to start.
+After all, it is a very good place to start.
