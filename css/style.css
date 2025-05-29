@@ -32,8 +32,13 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: "Fraunces";
+    src: url("/fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf") format("truetype");
+}
+
 body {
-    font-family: "RethinkSans", Helvetica, sans-serif;
+    font-family: "Fraunces", Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--main-background-color);
