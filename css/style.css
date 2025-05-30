@@ -2,7 +2,7 @@
     --main-text-color: #363636;
     --main-link-color: #336699;
     --post-date-color: #666;
-    --main-background-color: #ededed;
+    --main-background-color: #f9f9f9;
     --code-background-color: #d2d2d2;
     --svg-filter: invert(16%) sepia(0%) saturate(0%) hue-rotate(354deg) brightness(104%) contrast(88%);
     --svg-hover-filter: invert(30%) sepia(98%) saturate(336%) hue-rotate(168deg) brightness(99%) contrast(92%);
@@ -21,24 +21,12 @@
 }
 
 @font-face {
-    font-family: "RethinkSans";
-    src: url("/fonts/RethinkSans-VariableFont_wght.ttf") format("truetype");
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "RethinkSans";
-    src: url("/fonts/RethinkSans-Italic-VariableFont_wght.ttf") format("truetype");
-    font-style: italic;
-}
-
-@font-face {
     font-family: "Fraunces";
     src: url("/fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf") format("truetype");
 }
 
 body {
-    font-family: "Fraunces", Helvetica, sans-serif;
+    font-family: "Fraunces", Georgia, serif;
     margin: 0;
     padding: 0;
     background-color: var(--main-background-color);
@@ -68,8 +56,12 @@ footer .Footnotes {
     }
 }
 
-.content p {
-    margin: 2em 0;
+.content {
+    margin: 0 5%;
+    
+    p {
+        margin: 1em 0;
+    }
 }
 
 section.main-title {
@@ -78,13 +70,19 @@ section.main-title {
     display: flex;
     align-content: center;
     justify-content: space-between;
+    border-bottom: 1px solid #999;
 
     a {
         color: var(--main-text-color);
     }
+
+    h1 {
+        font-size: 2em;
+    }
 }
 
 section.navigation {
+    align-items: center;
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -97,7 +95,6 @@ section.navigation {
         li {
             display: inline;
             padding: 0 1em;
-            line-height: 1.5em;
 
             a {
                 font-weight: normal;
@@ -142,20 +139,23 @@ section.article_list {
     h1,
     h2 {
         font-size: 1.15em;
+        font-weight: 900;;
     }
     h3 {
         font-size: 1em;
+        font-weight: 600;
     }
 }
 
 section.post {
     h1 {
-        font-size: 1.15em;
+        font-size: 1.7em;
     }
-
-    h2,
+    h2 {
+        font-size: 1.4em;
+    }
     h3 {
-        font-size: 1em;
+        font-size: 1.15em;
     }
 }
 
