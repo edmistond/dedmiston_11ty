@@ -50,16 +50,16 @@ footer .Footnotes {
 
 .container {
     justify-content: space-between;
-    margin: 0 15%;
-    padding: 2em;
-    line-height: 1.65em;
-    font-size: 1.15em;
-    line-height: 1.5em;
+    max-width: 72ch;
+    margin-inline: auto;
+    padding: 2rem 1.5rem;
+    font-size: 1.0625rem;
+    line-height: 1.6;
 }
 
 @media screen and (max-width: 600px) {
     .container {
-        margin: 0 5%;
+        padding: 1.25rem 1rem;
     }
 }
 
@@ -69,7 +69,7 @@ footer .Footnotes {
 
 section.main-title {
     margin: 0;
-    padding: 10;
+    padding: 10px;
     display: flex;
     align-content: center;
     justify-content: space-between;
@@ -84,11 +84,13 @@ section.navigation {
     flex-direction: row;
     align-content: center;
     justify-content: space-between;
-    list-style: none; /* Removes bullet points from list */
     padding: 0;
     margin: 0;
 
     ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
         li {
             display: inline;
             padding: 0 1em;
@@ -164,6 +166,11 @@ a:hover {
     text-decoration: underline;
 }
 
+a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+
 .post_excerpt h3 {
     font-size: 1.5em;
 }
@@ -182,4 +189,61 @@ a:hover {
     .post_excerpt p {
         padding-left: 1.25em;
     }
+}
+
+/* Media and code handling */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+pre {
+    overflow-x: auto;
+    padding: 1rem;
+    background: var(--code-background-color);
+    border-radius: .5rem;
+}
+
+code {
+    white-space: pre-wrap;
+}
+
+/* Skip link for keyboard users */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+}
+
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+    z-index: 1000;
+    background: var(--main-background-color);
+    color: var(--main-text-color);
+    padding: .5rem .75rem;
+    border-radius: .25rem;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Improve webfont loading */
+@font-face {
+    font-family: "RethinkSans";
+    src: url("/fonts/RethinkSans-VariableFont_wght.ttf") format("truetype");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "RethinkSans";
+    src: url("/fonts/RethinkSans-Italic-VariableFont_wght.ttf") format("truetype");
+    font-style: italic;
+    font-display: swap;
 }
