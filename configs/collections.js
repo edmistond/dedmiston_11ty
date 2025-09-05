@@ -10,7 +10,7 @@ function collectionConfig(eleventyConfig) {
   });
 
   eleventyConfig.addCollection("postsByYear", (collection) => {
-    return _.chain(collection.getAllSorted())
+    return _.chain(collection.getFilteredByTag("post"))
       .groupBy((post) => post.date.getFullYear())
       .toPairs()
       .reverse()
