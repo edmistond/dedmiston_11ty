@@ -4,17 +4,25 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="{{ description | default: site.description }}">
+    <link rel="alternate" type="application/rss+xml" href="/index.xml" title="{{ site.title }}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ description | default: site.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="{{ "/css/style.css" | digest }}">
     <link rel="stylesheet" href="{{ "/css/prism-one-light.css" | digest }}">
     <title>{{ title }}</title>
 </head>
 
 <body>
+    <a class="skip-link" href="#content">Skip to content</a>
     <div class="container">
         {% include 'header.html' %}
 
-        <main class="content">
+        <main class="content" id="content">
             {{ content }}
         </main>
     </div>
