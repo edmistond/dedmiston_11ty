@@ -2,7 +2,7 @@
     --main-text-color: #363636;
     --main-link-color: #336699;
     --post-date-color: #666;
-    --main-background-color: #ededed;
+    --main-background-color: #f9f9f9;
     --code-background-color: #d2d2d2;
     --svg-filter: invert(16%) sepia(0%) saturate(0%) hue-rotate(354deg) brightness(104%) contrast(88%);
     --svg-hover-filter: invert(30%) sepia(98%) saturate(336%) hue-rotate(168deg) brightness(99%) contrast(92%);
@@ -84,6 +84,7 @@ section.navigation {
     flex-direction: row;
     align-content: center;
     justify-content: space-between;
+    align-items: center;
     padding: 0;
     margin: 0;
 
@@ -139,20 +140,23 @@ section.article_list {
     h1,
     h2 {
         font-size: 1.15em;
+        font-weight: 900;
     }
     h3 {
         font-size: 1em;
+        font-weight: 600;
     }
 }
 
 section.post {
     h1 {
-        font-size: 1.15em;
+        font-size: 1.7em;
     }
-
-    h2,
+    h2 {
+        font-size: 1.4em;
+    }
     h3 {
-        font-size: 1em;
+        font-size: 1.15em;
     }
 }
 
