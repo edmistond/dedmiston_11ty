@@ -25,7 +25,7 @@
     src:
         local("Fraunces Variable"),
         local("Fraunces"),
-        url("/fonts/Fraunces.ttf") format("truetype");
+        url("/fonts/Fraunces-VariableFont_SOFT\\,WONK\\,opsz\\,wght.ttf") format("truetype");
     font-style: normal;
     font-weight: 100 900;
     font-display: swap;
@@ -232,4 +232,3 @@ code {
         scroll-behavior: auto !important;
     }
 }
-
