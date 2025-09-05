@@ -2,7 +2,7 @@ import _ from "lodash";
 
 function collectionConfig(eleventyConfig) {
   eleventyConfig.addCollection("recent_posts", function (collection) {
-    return collection.getFilteredByTag("post").reverse().slice(0, 8);
+    return collection.getFilteredByTag("post").reverse().slice(0, 3);
   });
 
   eleventyConfig.addCollection("captions_project", function (collection) {
