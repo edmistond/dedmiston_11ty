@@ -21,24 +21,19 @@
 }
 
 @font-face {
-    font-family: "RethinkSans";
-    src: url("/fonts/RethinkSans-VariableFont_wght.ttf") format("truetype");
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "RethinkSans";
-    src: url("/fonts/RethinkSans-Italic-VariableFont_wght.ttf") format("truetype");
-    font-style: italic;
-}
-
-@font-face {
     font-family: "Fraunces";
-    src: url("/fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf") format("truetype");
+    src:
+        local("Fraunces Variable"),
+        local("Fraunces"),
+        url("/fonts/Fraunces.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
 }
 
 body {
-    font-family: "Fraunces", Helvetica, sans-serif;
+    font-family: "Fraunces", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+    font-optical-sizing: auto;
     margin: 0;
     padding: 0;
     background-color: var(--main-background-color);
@@ -238,17 +233,3 @@ code {
     }
 }
 
-/* Improve webfont loading */
-@font-face {
-    font-family: "RethinkSans";
-    src: url("/fonts/RethinkSans-VariableFont_wght.ttf") format("truetype");
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "RethinkSans";
-    src: url("/fonts/RethinkSans-Italic-VariableFont_wght.ttf") format("truetype");
-    font-style: italic;
-    font-display: swap;
-}
