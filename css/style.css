@@ -2,10 +2,12 @@
     --main-text-color: #363636;
     --main-link-color: #336699;
     --post-date-color: #666;
-    --main-background-color: #ededed;
+    --main-background-color: #f9f9f9;
     --code-background-color: #d2d2d2;
-    --svg-filter: invert(16%) sepia(0%) saturate(0%) hue-rotate(354deg) brightness(104%) contrast(88%);
-    --svg-hover-filter: invert(30%) sepia(98%) saturate(336%) hue-rotate(168deg) brightness(99%) contrast(92%);
+    --svg-filter: invert(16%) sepia(0%) saturate(0%) hue-rotate(354deg)
+        brightness(104%) contrast(88%);
+    --svg-hover-filter: invert(30%) sepia(98%) saturate(336%) hue-rotate(168deg)
+        brightness(99%) contrast(92%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,25 +17,37 @@
         --post-date-color: #999;
         --main-background-color: #2e3440;
         --code-background-color: #3b4252;
-        --svg-filter: invert(99%) sepia(0%) saturate(96%) hue-rotate(176deg) brightness(115%) contrast(86%);
-        --svg-hover-filter: invert(92%) sepia(43%) saturate(2390%) hue-rotate(165deg) brightness(88%) contrast(83%);
+        --svg-filter: invert(99%) sepia(0%) saturate(96%) hue-rotate(176deg)
+            brightness(115%) contrast(86%);
+        --svg-hover-filter: invert(92%) sepia(43%) saturate(2390%)
+            hue-rotate(165deg) brightness(88%) contrast(83%);
     }
 }
 
 @font-face {
-    font-family: "RethinkSans";
-    src: url("/fonts/RethinkSans-VariableFont_wght.ttf") format("truetype");
+    font-family: "Fraunces";
+    src:
+        local("Fraunces Variable"),
+        local("Fraunces"),
+        url("/fonts/Fraunces.ttf") format("truetype");
     font-style: normal;
-}
-
-@font-face {
-    font-family: "RethinkSans";
-    src: url("/fonts/RethinkSans-Italic-VariableFont_wght.ttf") format("truetype");
-    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
 }
 
 body {
-    font-family: "RethinkSans", Helvetica, sans-serif;
+    font-family:
+        "Fraunces",
+        system-ui,
+        -apple-system,
+        Segoe UI,
+        Roboto,
+        Helvetica,
+        Arial,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        sans-serif;
+    font-optical-sizing: auto;
     margin: 0;
     padding: 0;
     background-color: var(--main-background-color);
@@ -50,16 +64,16 @@ footer .Footnotes {
 
 .container {
     justify-content: space-between;
-    margin: 0 15%;
-    padding: 2em;
-    line-height: 1.65em;
-    font-size: 1.15em;
-    line-height: 1.5em;
+    max-width: 72ch;
+    margin-inline: auto;
+    padding: 2rem 1.5rem;
+    font-size: 1.0625rem;
+    line-height: 1.6;
 }
 
 @media screen and (max-width: 600px) {
     .container {
-        margin: 0 5%;
+        padding: 1.25rem 1rem;
     }
 }
 
@@ -69,14 +83,24 @@ footer .Footnotes {
 
 section.main-title {
     margin: 0;
-    padding: 10;
+    padding: 10px;
     display: flex;
     align-content: center;
     justify-content: space-between;
 
     a {
         color: var(--main-text-color);
+        text-decoration: none;
     }
+
+    .site-title {
+        font-size: 2.5em;
+        font-weight: 900;
+        line-height: 1.2em;
+        margin: 0;
+    }
+
+    border-bottom: 1px solid var(--main-text-color);
 }
 
 section.navigation {
@@ -84,11 +108,14 @@ section.navigation {
     flex-direction: row;
     align-content: center;
     justify-content: space-between;
-    list-style: none; /* Removes bullet points from list */
+    align-items: center;
     padding: 0;
     margin: 0;
 
     ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
         li {
             display: inline;
             padding: 0 1em;
@@ -137,20 +164,23 @@ section.article_list {
     h1,
     h2 {
         font-size: 1.15em;
+        font-weight: 900;
     }
     h3 {
         font-size: 1em;
+        font-weight: 600;
     }
 }
 
 section.post {
     h1 {
-        font-size: 1.15em;
+        font-size: 1.7em;
     }
-
-    h2,
+    h2 {
+        font-size: 1.4em;
+    }
     h3 {
-        font-size: 1em;
+        font-size: 1.15em;
     }
 }
 
@@ -162,6 +192,11 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
 }
 
 .post_excerpt h3 {
@@ -181,5 +216,47 @@ a:hover {
 @media screen and (max-width: 1024px) {
     .post_excerpt p {
         padding-left: 1.25em;
+    }
+}
+
+/* Media and code handling */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+pre {
+    overflow-x: auto;
+    padding: 1rem;
+    background: var(--code-background-color);
+    border-radius: 0.5rem;
+}
+
+code {
+    white-space: pre-wrap;
+}
+
+/* Skip link for keyboard users */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+}
+
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+    z-index: 1000;
+    background: var(--main-background-color);
+    color: var(--main-text-color);
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
     }
 }
