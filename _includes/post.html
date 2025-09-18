@@ -2,7 +2,7 @@
 layout: main_layout.html
 ---
 <section class="post">
-    <h1>{{ title }} &nbsp;&nbsp;<span class="post_date">({{ date | readableDate }})</span></h1>
+    <h1>{{ title }} &nbsp;&nbsp;<span class="post_date">(<time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time>)</span></h1>
     
 
     <div class="main_post">
@@ -10,7 +10,6 @@ layout: main_layout.html
     </div>
 
     <div>
-        <p><a href="javascript:history.back()">Back to Previous Page</a></p>
         <p><a href="/archive">View All Posts</a></p>
     </div>
 </section>
