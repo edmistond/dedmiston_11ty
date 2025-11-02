@@ -76,7 +76,7 @@ I mentioned songs, which is a great example of an area it's weaker in - noise re
 
 Honestly, outside of noise resilience? It's not lacking a lot and has gone from middle of the road to shockingly good.
 
-I would like if it had an option to open full-screen as a separate application on iOS, rather than the weird pop-over you get instead. The full-screen popover has occasionally hidden notifications I didn't want it to, though I only notice this after the fact when I find an important missed notification. I hope they've fixed this in iOS 26, and will update this once I have a definite answer.
+For full screen on iOS, I would like if I could open it as separate application, rather than the weird pop-over full-screen window you get instead. The smaller always-on-top bubble when it isn't full screen works well, though. In the past, the full-screen popover has occasionally hidden notifications I didn't want it to, though I only noticed this after the fact when I find an important missed notification. A friend helped me test this, and we confirmed this (seemingly) isn't the case anymore. You might want to be aware of it if you're expecting an important notification, though.
 
 I'd like to see an AppleTV update adding support for Live Captions there, too.
 
