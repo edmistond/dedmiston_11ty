@@ -61,6 +61,8 @@ Another minor issue - and again, this is not necessarily a knock against Live Tr
 
 If you have significant privacy concerns, an app that records everything your phone hears and pushes it up to a cloud server for processing might not be a thing you want.
 
+**Update, November 1, 2025**: As I'm working on my review of Apple's Live Captions in Tahoe, I remembered something else that's frustrating, but not Live Transcribe's fault per se. My hearing aid, a Phonak Naida Lumity ultrapower, has a quirk: if something is using the microphone, it goes into Bluetooth streaming mode. This cuts the external audio volume by about 50% because it assumes it's also going to receive audio to play _any moment now_. This means every time I start captions, I have to either shut off Bluetooth on my phone or try to tap the audio input selector before words appear and set it back to the iPhone microphone. I would like it if they moved that somewhere permanently visible to make it easier to manage, and (if there's no technical limitation) let me set which inputs I would prefer to use.
+
 ## Other notes
 
 This app has been life-changing for me and that would be true even if it were ugly as sin and set my retinas on fire every time I used it. Is it going to win an Apple Design Award? Probably not, only because it's niche and not "cool" enough. But... it looks good, it has light and dark modes, it allows configuring font face and sizes.
