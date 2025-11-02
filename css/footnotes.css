@@ -78,7 +78,8 @@
 /* Dark mode support (optional) */
 @media (prefers-color-scheme: dark) {
     .footnote-marker {
-        background-color: #5a9cf2;
+        background-color: #eee;
+        color: #333;
     }
 
     .footnote-ref:hover .footnote-marker {
