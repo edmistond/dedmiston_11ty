@@ -104,5 +104,5 @@ Cost: Free if you enjoy paying Apple prices on hardware. It requires Apple Silic
 [^4]: IMO, it should appear on the screen you invoked the menu bar command on.
 [^5]: Given how the series ended, maybe this isn't the most auspicious conclusion to the section.
 [^6]: Yes, I actually tested this - I can take screenshots of it.
-[^7]: It's a Phonak Naida Lumity Q90 UP. I like it, but the way it handles Bluetooth is sometimes frustrating.
+[^7]: It's a Phonak Naida Lumity L90 UP. I like it, but the way it handles Bluetooth is sometimes frustrating.
 [^8]: I'll write a whole post on this soon, but it's one of the reasons I'm such a big advocate for automatic captioning, even though it's somewhat controversial in the Deaf community. Yes, you trade off accuracy, but you get the benefit of _staying in the flow of the conversation_ instead of always being a few seconds behind.
