@@ -1,13 +1,21 @@
 ---
 layout: main_layout.html
 ---
-<section class="post">
-    <h1>{{ title }} &nbsp;&nbsp;<span class="post_date">(<time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time>)</span></h1>
-    
 
-    <div class="main_post">
-    {{ content }}
-    </div>
+<section class="post">
+    <h1>
+        {{ title }} &nbsp;&nbsp;<span class="post_date"
+            >(<time datetime="{{ date | machineDate }}"
+                >{{ date | readableDate }}</time
+            >)</span
+        >
+    </h1>
+
+    {% if subhead %}
+    <h2>{{ subhead }}</h2>
+    {% endif %}
+
+    <div class="main_post">{{ content }}</div>
 
     <div>
         <p><a href="/archive">View All Posts</a></p>
