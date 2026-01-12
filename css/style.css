@@ -25,19 +25,68 @@
 }
 
 @font-face {
-    font-family: "Fraunces";
+    font-family: "Overlock";
     src:
-        local("Fraunces Variable"),
-        local("Fraunces"),
-        url("/fonts/Fraunces.ttf") format("truetype");
+        local("Overlock"),
+        url("/fonts/Overlock-Regular.ttf") format("truetype");
     font-style: normal;
-    font-weight: 100 900;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Overlock";
+    src:
+        local("Overlock Italic"),
+        url("/fonts/Overlock-Italic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Overlock";
+    src:
+        local("Overlock Bold"),
+        url("/fonts/Overlock-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Overlock";
+    src:
+        local("Overlock Bold Italic"),
+        url("/fonts/Overlock-BoldItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Overlock";
+    src:
+        local("Overlock Black"),
+        url("/fonts/Overlock-Black.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Overlock";
+    src:
+        local("Overlock Black Italic"),
+        url("/fonts/Overlock-BlackItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 900;
     font-display: swap;
 }
 
 body {
     font-family:
-        "Fraunces",
+        "Overlock",
         system-ui,
         -apple-system,
         Segoe UI,
@@ -52,6 +101,13 @@ body {
     padding: 0;
     background-color: var(--main-background-color);
     color: var(--main-text-color);
+}
+
+blockquote {
+    border-left: 5px solid #ccc;
+    padding-left: 1.5em;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 footer {
