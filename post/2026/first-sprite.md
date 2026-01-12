@@ -6,7 +6,7 @@ tags: [post, sprites, flyio, ai]
 
 **Assumed Audience**: Developers interested in agentic coding, statefully sandboxed working environments, and Fly.io's products.
 
-It's always a risk of sorts to play with a newly released product, but I took a look at Fly.io's new [Sprites](https://sprites.dev) offering. In a nutshell, the idea is that you get a cheap and disposable sandbox environment, helpfully preconfigured with useful agentic tools like Codex, Claude Code, Gemini CLI, node, ruby, the Github CLI, and so on. But, it's also _stateful_. This makes it easier to work with agents, since you don't need to rebuild the entire system state every time you start a new task. You use these environments to run your coding agent with "dangerously skip permissions" enabled. It has strong checkpointing, so as long as you set a checkpoint you're able to roll back even if the agent goes rogue and wipes out the entire environment. Which, of course, is the big draw here: if the agent goes rogue and wipes out your environment, it _won't_ nuke everything on your laptop in the process.
+It's always a risk of sorts to play with a newly released product, but I took a look at Fly.io's new [Sprites](https://sprites.dev) offering. In a nutshell, the idea is that you get a cheap and disposable sandbox environment, helpfully preconfigured with useful agentic tools like Codex, Claude Code, Gemini CLI, node, ruby, the Github CLI, and so on. But, it's also _stateful_. This makes it easier to work with agents, since you don't need to rebuild the entire system state every time you start a new task. You use these environments to run your coding agent with "dangerously skip permissions" enabled. It has strong checkpointing, so as long as you set a checkpoint you're able to roll back even if the agent goes rogue and wipes out the entire environment. Which, of course, is the big draw here: if that happens, it _won't_ nuke everything on your laptop in the process.
 
 They have [a good blog post laying out the rationale behind this](https://fly.io/blog/code-and-let-live/) if you're interested. It's worth a read.
 
@@ -50,11 +50,13 @@ But wait! First you need to have `jq` installed; it's not by default. Fortunatel
 
 I let Claude work on this and the result was shockingly good: almost exactly what I had in mind. I requested a few follow-up edits; one to add the speaker name to the detail panel, one to add a disclaimer that this is unofficial and not affiliated with or endorsed by Codemash. Total time: about five minutes, and this with Sonnet, which people generally regard as less capable.
 
-## Making it Available
+Testing this in-browser was a slightly rough edge - the Sprites CLI did not automatically proxy to the remote host for me. Once I ran `sprites proxy 8080` in my working directory, I was able to browse to `localhost:8080` to test the page.
 
-Again, easy-peasy. Run `sprite url update --auth public` (optionally with a name parameter, but I'm doing this in the same directory I ran `sprite use` in and don't need to). Boom, publicly accessible URL so long as you have something running in the sprite environment on port 8080. I just `npx serve`'d it, and it was good to go.
+## Making it Publicly Available
 
-I would link it here, but it's not going to be available after this Friday evening. Since I don't intend this to be a long-term tool, I'm not adding it on my site. But instead, here's a fun screenshot:
+This is easy. Run `sprite url update --auth public`. Boom, publicly accessible URL so long as you have something running in the sprite environment on port 8080. I just `npx serve`'d it, and it was good to go.
+
+I would link it here, but it's not going to be available after CodeMash concludes Friday evening. Since I don't intend this to be a long-term tool, I'm not adding it to my site. But instead, here's a fun screenshot:
 
 ![Calendar block view of Codemash sessions for Thursday, Jan 16, 2026](/assets/images/codemash-cal.png)
 
@@ -66,16 +68,16 @@ Another rough edge I'm noting: your sprite is supposed to shut down when it's id
 
 Fly is well-known (at least in certain circles) for their inexpensive hosting, and Sprites are no exception. Signing up gives you $30 in trial credits, which allows for the creation of a generous number of sprites. CPU time is billed at $0.07 per CPU-hour, memory at $0.04375 per GB-hour, and storage in $0.00068 per GB-hour. The site contains a breakdown of this, but in short: Their estimate is that a ~4 hour Claude Code session would cost about 46 cents. Running a web app that gets 30 hours of wake time averaging 10% of 2 CPUs and 1 gig of RAM would cost about $4 a month. So, yeah - it's cheap, and on the pay-as-you-go plan you can have up to 3 sprites running concurrently. Upgrading to a $20/mo plan gives you up to 10 concurrent, 450 CPU-hours, 1800 GB-hours of RAM, and 50GB of storage.
 
-As to performance, I didn't find anything directly on their site. [Simon Willison also wrote about this](https://simonwillison.net/2026/Jan/9/sprites-dev/) and said it's an 8GB RAM, 8 CPU server. Running `sprite create` is really quick - I saw no delay when doing so.
+As to performance and machine size, I didn't find anything directly on their site. [Simon Willison also wrote about this](https://simonwillison.net/2026/Jan/9/sprites-dev/) and said it's an 8GB RAM, 8 CPU server. Running `sprite create` is really quick - I saw no delay when doing so.
 
 ## Takeaways, in no Particular Order
 
 - As an acquaintance of mine, [Manuel](https://the.scapegoat.dev/), often points out in our discussions: telling the model "use sqlite" is a super-power for context management. Don't ask the AI to manipulate data, ask it to _write scripts to manipulate the data without looking at it_. Keeping all that out of context unless you really need it gets you a lot further in the same number of tokens. This doesn't even mean creating any sort of a backend, just that you use it as a sort of intermediary data store for things you have it working on.
 - Sprites has some bugs and rough edges, but it's pretty awesome. The easily deploy-ability is a big plus, and the memory allocation is generous enough that things don't feel slow.
-- This is absolutely a very small utility, but I'm impressed how quickly and efficiently Sonnet nailed it in one try (with only minor follow-up tweaks). I could've built this myself, but I would have spent a few hours and probably looked worse.
-- If I cared about delivering this to a client as a professional thing, I would have spent much more time reviewing and tweaking it, but probably still less than it would've taken me to build by hand.
-- The agentic loop is so much faster when you don't have constant "can I do the thing?" pauses from the agent. I don't think this is appropriate to every situation or type of app, but it's really useful and this is a more effective isolation than a Docker container is.
-- The agent not needing to ask if it can do the thing seems like it could also reduce opportunities to intercede if it's starting to go off the rails.
-- I have some bigger thoughts on how AI is changing the industry, but they're out of scope for this post, I think. I know there's a lot of hype (which I find annoying and overblown), and there's also a lot of cynical skepticism, which I find annoying. Basically: I don't know what shape AI's impact is going to have, but it's pretty clear to me that it is going to have a shape. I am trying to stick to the Ted Lasso approach: "Be curious, not judgmental."
+- This was a small utility, but I'm impressed how well Sonnet nailed it in one try, with only minor tweaks needed. Yes, I could've built this myself, but I would need a few hours and the result would be uglier. This is an acceptable baseline to what I wanted.
+- **To be very clear on this point:** If I were delivering this professionally to a client, it'd get more review and tweaking than it did. Using AI to get past the blank page problem that so many of us struggle with really helps, however.
+- The agentic loop is so much faster if you don't get constant "may I do the thing?" prompts from the agent. I don't think this is ideal for every situation or type of app, but it's useful. Docker containers are an option but aren't perfectly isolated, and it's great putting them in a nice little sandbox where there's no lasting harm done if they destroy it.
+- On the other hand, the agent not needing to ask if it can do the thing might reduce your opportunities to intercede if it's starting to go off the rails.
+- I have some bigger thoughts on how AI is changing the industry, but they're out of scope for this post, I think. I know there's a lot of breathless hype, and a lot of cynical skepticism, both of which I find annoying. In short: I don't know what shape AI's impact is going to have, but it's pretty clear to me that it is going to have a shape. I am trying to stick to the Ted Lasso approach: "Be curious, not judgmental." Anyone who says they know exactly how this all plays out is either an idiot, selling something, or both.
 
 [^1]: Seriously - the first time I saw Litestream, my mind was blown. They hired the guy who wrote it, have continued to sponsor it, and have integrated similar things into their stack.
