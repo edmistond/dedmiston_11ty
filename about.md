@@ -63,7 +63,7 @@ _Important disclaimer: I don't speak for my past or present employers, and they 
 
 ## Conferences I've Attended (Say hi if you were there!)
 
-* CodeMash - 2009-11, [2024]({{ '/post/2024/codemash-recap' | url }})
+* CodeMash - 2009-11, [2024]({{ '/post/2024/codemash-recap' | url }}), [2026]({{ '/post/2026/codemash-recap' | url }})
 * Stir Trek - 2012, 2016, 2021-23, 2025
 * Steel City Ruby - 2013-14
 * Erie Day of Code - 2015
